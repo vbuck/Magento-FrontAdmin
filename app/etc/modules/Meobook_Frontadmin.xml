@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Meobook_Frontadmin>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends />
+        </Meobook_Frontadmin>
+    </modules>
+</config>

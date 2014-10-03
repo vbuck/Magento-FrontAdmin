@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<config>
+    <menu>
+        <visitsite translate="title" module="meobookfrontadmin">
+            <title>Homepage</title>
+            <sort_order>1</sort_order>
+            <action>frontadmin/index/gotohomepage</action>
+        </visitsite>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow everything</title>
+            </all>
+            <admin translate="title" module="meobookfrontadmin">
+                <title>Magento Admin</title>
+                <children>
+                    <visitsite translate="title">
+                        <title>Homepage</title>
+                        <sort_order>0</sort_order>
+                    </visitsite>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
