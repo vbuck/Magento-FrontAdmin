@@ -1,19 +1,19 @@
 Magento-FrontAdmin
 ==================
 
-The idea is to help store administrator save time when managing the Magento store, switch between the Magento backend and frontend quickly with the 'Admin menu' and other accessories.
+The idea is to help store administrator save time when managing the Magento store, switch between the Magento backend and frontend quickly with the 'Front admin menu' and other accessories.
 
 
 Features:
 --------------------------------------------------
-- Display Admin menu on frontend (like drupal, wordpress, joomla, moodle, ...)
- - Quick access to Magento managing system
-- Add 'Homepage' link item into FrontAdmin menu
- - Quick link to homepage
-- Add 'Flush Cache Storage' item into FrontAdmin menu
- - Quick refresh cache on frontend
-- Add 'Edit' link
- - One-click to edit the product (or cms page) that you are viewing. This menu item will displays on Product Page View or Cms Page View only.
+- Display the Admin menu on frontend (like drupal, wordpress, joomla, moodle, ...)
+ - Quick access to Magento management system
+- 'Homepage' link item
+ - Quick link go to homepage
+- 'Flush Cache Storage' link item
+ - One-click to refresh all caches
+- 'Edit' link item
+ - One-click to edit the product (or cms page) that you are viewing. This menu item is available only on Product Page View and Cms Page View.
 
 
 Technical Detail:
@@ -25,7 +25,7 @@ Technical Detail:
 Todo:
 --------------------------------------------------
 - Haven't test with multistore yet
-- Only support session save method 'files' and 'db' currently
+- Currently support only two session save methods: 'files' and 'db'.
 - Bug report email: minhtc256@gmail.com
 
 
