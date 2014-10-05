@@ -22,6 +22,13 @@ Technical Detail:
 - Generate URL with admin secure key
 
 
+Update
+--------------------------------------------------
+- Version 0.0.0.2
+ - Using ajax to prevent caching problem
+ - Compress module files
+
+
 Todo:
 --------------------------------------------------
 - Haven't test with multistore yet

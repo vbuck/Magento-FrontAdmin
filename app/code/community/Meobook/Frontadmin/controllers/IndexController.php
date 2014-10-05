@@ -6,9 +6,14 @@
  */
 class Meobook_Frontadmin_IndexController extends Mage_Core_Controller_Front_Action 
 {
+	public function testAction()
+	{
+		die('zzz');
+	}
+
 	public function gotohomepageAction()
 	{
-		$this->_response->clearHeaders()->setRedirect(Mage::getBaseUrl())->sendHeadersAndExit();
+		$this->_response->clearHeaders()->setRedirect(Mage::getBaseUrl());
 	}
 
 	/**
@@ -23,7 +28,23 @@ class Meobook_Frontadmin_IndexController extends Mage_Core_Controller_Front_Acti
 	        echo 'Cache has been cleared, if you see this page, maybe your site has a javascript error <br/>';
 	        echo '<a href="'. Mage::getBaseUrl() .'" > Click here </a> to go to homepage.';
 	        exit;
+    	} 
+    	else 
+    	{
+    		$this->gotohomepageAction();
     	}
+    }
 
+    public function initFrontAdminAction()
+    {
+    	if(Mage::getSingleton('meobookfrontadmin/session')->isAdminLoggedIn()) 
+    	{
+	      	$this->getResponse()->setBody(
+	            $this->getLayout()
+	                ->createBlock('meobookfrontadmin/menu')
+	                ->toHtml()
+	        );
+	        return $this;
+	    }
     }
 }

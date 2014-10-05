@@ -24,9 +24,27 @@ class Meobook_Frontadmin_Model_Observer
 			case 'catalog_product':
 			case 'cms_page':
 				$editUrl = Mage::getModel('meobookfrontadmin/url')->getUrl('adminhtml/' . $routePath . '/edit', $request->getParams());
+				Mage::getSingleton('core/session')->setEditUrl($editUrl);
 				break;
-		}
+			case 'meobookfrontadmin_index':
+				break;
+			default:
+				Mage::getSingleton('core/session')->setEditUrl(null);
+				break;
 
-		Mage::getSingleton('core/session')->setEditUrl($editUrl);
+		}
+	}
+
+	public function initFrontAdmin(Varien_Event_Observer $observer)
+	{
+		if(Mage::getSingleton('meobookfrontadmin/session')->isAdminLoggedIn())
+    	{
+			$layout = $observer->getEvent()->getLayout();
+			if($layout->getBlock('head'))
+			{
+				$block = $layout->createBlock('meobookfrontadmin/init', 'frontadmin_init');
+				$layout->getBlock('head')->append($block);
+			}
+		}
 	}
 }

@@ -1,7 +1,7 @@
 <config>
     <modules>
         <Meobook_Frontadmin>
-            <version>0.0.0.1</version>
+            <version>0.0.0.2</version>
         </Meobook_Frontadmin>
     </modules>
     <frontend>
@@ -14,13 +14,6 @@
                 </args>
             </meobookfrontadmin>
         </routers>
-        <layout>
-            <updates>
-                <meobookfrontadmin>
-                    <file>frontadmin.xml</file>
-                </meobookfrontadmin>
-            </updates>
-        </layout>
     </frontend>
     <global>
         <blocks>
@@ -48,6 +41,15 @@
                     </frontadmin_observer>
                 </observers>
             </controller_action_predispatch>
+            <controller_action_layout_generate_blocks_after>
+                <observers>
+                    <frontadmin_init>
+                        <type>singleton</type>
+                        <class>meobookfrontadmin/observer</class>
+                        <method>initFrontAdmin</method>
+                    </frontadmin_init>
+                </observers>
+            </controller_action_layout_generate_blocks_after>
         </events>
     </global>
 </config>
