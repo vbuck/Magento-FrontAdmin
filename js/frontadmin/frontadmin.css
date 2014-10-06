@@ -1,5 +1,4 @@
 #frontadmin-nav-bar { border-top:1px solid #2d444f; border-bottom:1px solid #2d444f; background:url(./images/nav1_bg.gif) repeat-x 0 100% #666e73; padding:0 30px; font: 12px/1.1em Arial, Helvetica, sans-serif; }
-
 #frontadmin-nav-bar #nav { float:left; width: auto; min-height: 0; background: inherit; text-align: center; padding: inherit; }
 
 /************** ALL LEVELS  *************/ /* Style consistent throughout all nav levels */
@@ -11,14 +10,12 @@
 #frontadmin-nav-bar #nav span { display:block; /*cursor:pointer;*/ }
 #frontadmin-nav-bar #nav a { line-height:1.3em; }
 
-
 /************ 1ST LEVEL  ***************/
 #frontadmin-nav-bar #nav li { float:left; background:url(./images/nav1_sep.gif) no-repeat 100% 0;  }
 #frontadmin-nav-bar #nav li.active { margin-left:-1px; background:url(./images/nav1_active.gif) no-repeat; color:#fff; font-weight:bold;  }
 #frontadmin-nav-bar #nav li.active em { display:block; position:absolute; top:0; right:-1px; width:3px; height:27px; background:url(./images/nav1_active.gif) no-repeat 100% 0; }
 #frontadmin-nav-bar #nav a { float:left; padding:0 14px; color:#fff; line-height:27px; }
 #frontadmin-nav-bar #nav li.over a { color:#d6e2e5; }
-
 
 /************ 1ST LEVEL RESET ************/
 #frontadmin-nav-bar #nav ul li,
@@ -29,7 +26,6 @@
 #frontadmin-nav-bar #nav ul li.over a:hover,
 #frontadmin-nav-bar #nav ul a,
 #frontadmin-nav-bar #nav li.active li { font-weight:normal; }
-
 
 /************ 2ND LEVEL ************/
 #frontadmin-nav-bar #nav ul { background: inherit; padding: inherit; border: none; position:absolute; width:189px; top:27px; left:-10000px; padding-bottom:3px; border-top:1px solid #2d444f; }
@@ -81,33 +77,6 @@
 #frontadmin-nav-bar li#page-edit-link { background: url(./images/btn_edit.gif) no-repeat 10% 50%; }
 #frontadmin-nav-bar li#flush-allcache-link { background: url(./images/reload.png) no-repeat 2% 50%; background-size: 10%; }
 
-
-#frontadmin-please-wait {
-	width: 100%;
-	height: 100%;
-	opacity: 0.8;
-	position: absolute;
-	top: 0;
-	z-index: 999;
-	color: #d85909;
-	font-weight: bold;
-	text-align: center;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE8 */
-	/*background: url(./images/ajax-loader-tr.gif) no-repeat 50% #000;*/
-}
-
-#frontadmin-please-wait .loader {
-	width: 214px;
-	height: 88px;
-	position: fixed;
-	top: 45%;
-	left: 50%;
-	margin-left: -105px;
-	padding: 15px 30px;
-	background: #fff4e9;
-	border: 2px solid #f1af73;
-	color: #d85909;
-	z-index: 1000;
-}
-
+#frontadmin-please-wait { width: 100%; height: 100%; opacity: 0.8; position: absolute; top: 0; z-index: 999; color: #d85909; font-weight: bold; text-align: center; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE8 */ }
+#frontadmin-please-wait .loader { width: 214px; height: 88px; position: fixed; top: 45%; left: 50%; margin-left: -105px; padding: 15px 30px; background: #fff4e9; border: 2px solid #f1af73; color: #d85909; z-index: 1000; }
 #frontadmin-please-wait .loader img { display: inline; }

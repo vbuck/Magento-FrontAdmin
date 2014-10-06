@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="head">
+			<action method="addItem"><type>js</type><name>frontadmin/jquery-1.11.1.min.js</name></action>
+			<action method="addItem"><type>js</type><name>frontadmin/jquery.fancybox.pack.js</name></action>
+			<action method="addItem"><type>js</type><name>frontadmin/frontadmin.js</name></action>
+			<block type="meobookfrontadmin/menu" name="frontadmin.menu" template="frontadmin/menu.phtml" />
+		</reference>
+	</default>
+</layout>

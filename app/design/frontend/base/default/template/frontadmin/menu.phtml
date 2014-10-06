@@ -1,0 +1,26 @@
+<div id="frontadmin-nav-bar">
+	<?php echo $this->getMenuLevel($this->getMenuArray()); ?>
+	<ul id="ext-nav">
+		<li id="flush-allcache-link" >
+			<a href="#" onclick="flushAllCache('<?php echo $this->_url->getUrl('frontadmin/index/flushAll'); ?>'); return false;">
+				<span><?php echo $this->__('Flush Cache Storage') ?></span>
+			</a>
+		</li>
+
+		<?php if(Mage::getSingleton('core/session')->getEditUrl()) : ?>
+		<li id="page-edit-link" >
+			<a data-fancybox-type='iframe' href="<?php echo Mage::getSingleton('core/session')->getEditUrl() ?>">
+				<span><?php echo $this->__('Edit') ?></span>
+			</a>
+		</li>
+		<?php endif; ?>
+	</ul>
+</div>
+
+<div id="frontadmin-please-wait" style="display:none">
+    <p class="loader" id="loading_mask_loader">
+	    <img src="<?php echo Mage::helper('meobookfrontadmin')->getJsUrl('images/ajax-loader-tr.gif') ?>" alt="<?php echo $this->__('Loading...') ?>"/>
+	    <br/>
+	    <?php echo $this->__('Please wait...') ?>
+    </p>
+</div>

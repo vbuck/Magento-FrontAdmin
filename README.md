@@ -12,7 +12,7 @@ Features:
  - Quick link go to homepage
 - 'Flush Cache Storage' link item
  - One-click to refresh all caches
-- 'Edit' link item
+- 'Edit' link item on 
  - One-click to edit the product (or cms page) that you are viewing. This menu item is available only on Product Page View and Cms Page View.
 
 
@@ -24,9 +24,11 @@ Technical Detail:
 
 Update
 --------------------------------------------------
-- Version 0.0.0.2
- - Using ajax to prevent caching problem
+- Version 0.0.2
+ - Fix issue with Full page cache
  - Compress module files
+ - Included jQuery
+ - Included Fancybox2
 
 
 Todo:

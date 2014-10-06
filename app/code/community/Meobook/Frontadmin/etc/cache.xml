@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <placeholders>
+        <meobook_frontadmin>
+            <block>meobookfrontadmin/menu</block>
+            <template>frontadmin/menu.phtml</template>
+            <name>frontadmin.menu</name>
+            <placeholder>MEOBOOK_FRONTADMIN_MENU_CACHE</placeholder>
+            <container>Meobook_Frontadmin_Model_Container_Menu</container>
+        </meobook_frontadmin>
+    </placeholders>
+</config>

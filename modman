@@ -1,10 +1,19 @@
 /LICENSE /LICENSE
 /app/code/community/Meobook/Frontadmin /app/code/community/Meobook/Frontadmin
+/app/design/frontend/base/default/layout/frontadmin.xml /app/design/frontend/base/default/layout/frontadmin.xml
+/app/design/frontend/base/default/template/frontadmin/menu.phtml /app/design/frontend/base/default/template/frontadmin/menu.phtml
 /app/etc/modules/Meobook_Frontadmin.xml /app/etc/modules/Meobook_Frontadmin.xml
 /js/frontadmin/frontadmin.css /js/frontadmin/frontadmin.css
+/js/frontadmin/frontadmin.js /js/frontadmin/frontadmin.js
 /js/frontadmin/images/ajax-loader-tr.gif /js/frontadmin/images/ajax-loader-tr.gif
+/js/frontadmin/images/blank.gif /js/frontadmin/images/blank.gif
 /js/frontadmin/images/btn_edit.gif /js/frontadmin/images/btn_edit.gif
 /js/frontadmin/images/fam_refresh.gif /js/frontadmin/images/fam_refresh.gif
+/js/frontadmin/images/fancybox_loading.gif /js/frontadmin/images/fancybox_loading.gif
+/js/frontadmin/images/fancybox_loading@2x.gif /js/frontadmin/images/fancybox_loading@2x.gif
+/js/frontadmin/images/fancybox_overlay.png /js/frontadmin/images/fancybox_overlay.png
+/js/frontadmin/images/fancybox_sprite.png /js/frontadmin/images/fancybox_sprite.png
+/js/frontadmin/images/fancybox_sprite@2x.png /js/frontadmin/images/fancybox_sprite@2x.png
 /js/frontadmin/images/loading.gif /js/frontadmin/images/loading.gif
 /js/frontadmin/images/nav1_active.gif /js/frontadmin/images/nav1_active.gif
 /js/frontadmin/images/nav1_bg.gif /js/frontadmin/images/nav1_bg.gif
@@ -18,4 +27,7 @@
 /js/frontadmin/images/reload.png /js/frontadmin/images/reload.png
 /js/frontadmin/images/tab_home_android.png /js/frontadmin/images/tab_home_android.png
 /js/frontadmin/init.js /js/frontadmin/init.js
+/js/frontadmin/jquery-1.11.1.min.js /js/frontadmin/jquery-1.11.1.min.js
+/js/frontadmin/jquery.fancybox.css /js/frontadmin/jquery.fancybox.css
+/js/frontadmin/jquery.fancybox.pack.js /js/frontadmin/jquery.fancybox.pack.js
 /screenshot/screenshot.png /screenshot/screenshot.png

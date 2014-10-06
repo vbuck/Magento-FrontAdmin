@@ -31,10 +31,16 @@ class Meobook_Frontadmin_Model_Observer
 			default:
 				Mage::getSingleton('core/session')->setEditUrl(null);
 				break;
-
 		}
 	}
 
+	/** 
+	* init menu for ajax
+	*
+	* @param Varien_Event_Observer $observer
+	*
+	* @return void
+	*/
 	public function initFrontAdmin(Varien_Event_Observer $observer)
 	{
 		if(Mage::getSingleton('meobookfrontadmin/session')->isAdminLoggedIn())
@@ -42,7 +48,7 @@ class Meobook_Frontadmin_Model_Observer
 			$layout = $observer->getEvent()->getLayout();
 			if($layout->getBlock('head'))
 			{
-				$block = $layout->createBlock('meobookfrontadmin/init', 'frontadmin_init');
+				$block = $layout->createBlock('meobookfrontadmin/ajax', 'frontadmin_ajax');
 				$layout->getBlock('head')->append($block);
 			}
 		}

@@ -14,7 +14,6 @@ class Meobook_Frontadmin_Block_Menu extends Mage_Adminhtml_Block_Page_Menu
     protected function _construct()
     {
         parent::_construct();
-        $this->setTemplate('frontadmin/menu.phtml');
         $this->_url = Mage::getModel('meobookfrontadmin/url');
     }
 
@@ -61,19 +60,7 @@ class Meobook_Frontadmin_Block_Menu extends Mage_Adminhtml_Block_Page_Menu
     {
     	if(Mage::getSingleton('meobookfrontadmin/session')->isAdminLoggedIn()) 
     	{
-            $html = $this->getMenuLevel($this->getMenuArray());
-            
-            $flushAllCacheLink = $this->_url->getUrl('frontadmin/index/flushAll');
-            $html .= "<ul id='ext-nav'>";
-            $html .= "<li id='flush-allcache-link' ><a href='#' onclick='flushAllCache(\"$flushAllCacheLink\"); return false;' ><span>" . $this->__('Flush Cache Storage') . "</span></a></li>";
-
-            $editUrl = Mage::getSingleton('core/session')->getEditUrl();
-            if($editUrl) 
-            {
-                $html .= "<li id='page-edit-link' ><a target='_blank' href='$editUrl'><span>". $this->__('Edit') . "</span></a></li>";
-            }
-            $html .= "</ul>";
-            return $html;
+            return parent::_toHtml();
     	}
     }
 

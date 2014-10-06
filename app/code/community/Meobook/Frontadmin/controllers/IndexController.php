@@ -8,9 +8,11 @@ class Meobook_Frontadmin_IndexController extends Mage_Core_Controller_Front_Acti
 {
 	public function testAction()
 	{
-		die('zzz');
 	}
 
+	/**
+    * Redirect to homepage
+    */
 	public function gotohomepageAction()
 	{
 		$this->_response->clearHeaders()->setRedirect(Mage::getBaseUrl());
@@ -35,6 +37,9 @@ class Meobook_Frontadmin_IndexController extends Mage_Core_Controller_Front_Acti
     	}
     }
 
+	/**
+    * Ajax load menu
+    */    
     public function initFrontAdminAction()
     {
     	if(Mage::getSingleton('meobookfrontadmin/session')->isAdminLoggedIn()) 
