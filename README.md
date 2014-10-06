@@ -40,4 +40,6 @@ Todo:
 
 Screenshot:
 --------------------------------------------------
-![magento frontadmin](https://github.com/minhtc/Magento-FrontAdmin/raw/master/screenshot/screenshot.png)
+![magento frontadmin](https://github.com/minhtc/Magento-FrontAdmin/raw/master/screenshot/screenshot1.png)
+
+![magento frontadmin](https://github.com/minhtc/Magento-FrontAdmin/raw/master/screenshot/screenshot2.png)

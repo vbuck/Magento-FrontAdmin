@@ -8,8 +8,8 @@ jQueryMeobook(document).ready(function() {
     if (jQueryMeobook('#page-edit-link a').length) {
         jQueryMeobook('#page-edit-link a').fancybox({
             fitToView   : true,
-            width       : '90%',
-            height      : '80%',
+            width       : '70%',
+            height      : '60%',
             autoSize    : true,
             autoCenter  : true,
             fitToView   : true,
