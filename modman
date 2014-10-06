@@ -3,6 +3,7 @@
 /app/design/frontend/base/default/layout/frontadmin.xml /app/design/frontend/base/default/layout/frontadmin.xml
 /app/design/frontend/base/default/template/frontadmin/menu.phtml /app/design/frontend/base/default/template/frontadmin/menu.phtml
 /app/etc/modules/Meobook_Frontadmin.xml /app/etc/modules/Meobook_Frontadmin.xml
+/js/frontadmin/ajax.js /js/frontadmin/ajax.js
 /js/frontadmin/frontadmin.css /js/frontadmin/frontadmin.css
 /js/frontadmin/frontadmin.js /js/frontadmin/frontadmin.js
 /js/frontadmin/images/ajax-loader-tr.gif /js/frontadmin/images/ajax-loader-tr.gif
@@ -26,7 +27,6 @@
 /js/frontadmin/images/nav3_bg.png /js/frontadmin/images/nav3_bg.png
 /js/frontadmin/images/reload.png /js/frontadmin/images/reload.png
 /js/frontadmin/images/tab_home_android.png /js/frontadmin/images/tab_home_android.png
-/js/frontadmin/init.js /js/frontadmin/init.js
 /js/frontadmin/jquery-1.11.1.min.js /js/frontadmin/jquery-1.11.1.min.js
 /js/frontadmin/jquery.fancybox.css /js/frontadmin/jquery.fancybox.css
 /js/frontadmin/jquery.fancybox.pack.js /js/frontadmin/jquery.fancybox.pack.js
