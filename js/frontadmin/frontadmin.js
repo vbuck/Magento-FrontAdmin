@@ -1,8 +1,5 @@
 jQuery.noConflict();
 var jQueryMeobook = jQuery;
-// Inject css
-jQueryMeobook('head').append('<link rel="stylesheet" type="text/css" href="' + document.location.origin + '/js/frontadmin/frontadmin.css" media="all">');
-jQueryMeobook('head').append('<link rel="stylesheet" type="text/css" href="' + document.location.origin + '/js/frontadmin/jquery.fancybox.css" media="all">');
 // Init fancybox
 jQueryMeobook(document).ready(function() {
     if (jQueryMeobook('#page-edit-link a').length) {

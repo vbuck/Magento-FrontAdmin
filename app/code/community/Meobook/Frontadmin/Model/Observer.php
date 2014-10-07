@@ -23,7 +23,15 @@ class Meobook_Frontadmin_Model_Observer
 		switch ($routePath) {
 			case 'catalog_product':
 			case 'cms_page':
-				$editUrl = Mage::getModel('meobookfrontadmin/url')->getUrl('adminhtml/' . $routePath . '/edit', $request->getParams());
+				$requestParams = $request->getParams();
+				if (is_array($requestParams)) {
+					$requestParams['frontadmin_quickedit'] = true;
+				}
+				else 
+				{
+					$requestParams = array('frontadmin_quickedit' => true);
+				}
+				$editUrl = Mage::getModel('meobookfrontadmin/url')->getUrl('adminhtml/' . $routePath . '/edit', $requestParams);
 				Mage::getSingleton('core/session')->setEditUrl($editUrl);
 				break;
 			case 'meobookfrontadmin_index':
@@ -51,6 +59,15 @@ class Meobook_Frontadmin_Model_Observer
 				$block = $layout->createBlock('meobookfrontadmin/ajax', 'frontadmin_ajax');
 				$layout->getBlock('head')->append($block);
 			}
+		}
+	}
+
+	public function updateHanle(Varien_Event_Observer $observer)
+	{
+		if($observer->getEvent()->getAction()->getRequest()->getParam('frontadmin_quickedit') === '1')
+		{
+			$layout = $observer->getEvent()->getLayout();
+			$layout->getUpdate()->addHandle('frontadmin_quickedit');
 		}
 	}
 }

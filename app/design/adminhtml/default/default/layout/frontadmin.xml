@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout>
+    <frontadmin_quickedit>
+        <remove name="header"/>
+        <remove name="notifications"/>
+        <remove name="footer"/>
+        <reference name="head">
+            <action method="addItem"><type>js_css</type><name>frontadmin/quickedit.css</name></action>
+        </reference>
+    </frontadmin_quickedit>
+
+</layout>

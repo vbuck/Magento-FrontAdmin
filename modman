@@ -1,5 +1,6 @@
 /LICENSE /LICENSE
 /app/code/community/Meobook/Frontadmin /app/code/community/Meobook/Frontadmin
+/app/design/adminhtml/default/default/layout/frontadmin.xml /app/design/adminhtml/default/default/layout/frontadmin.xml
 /app/design/frontend/base/default/layout/frontadmin.xml /app/design/frontend/base/default/layout/frontadmin.xml
 /app/design/frontend/base/default/template/frontadmin/menu.phtml /app/design/frontend/base/default/template/frontadmin/menu.phtml
 /app/etc/modules/Meobook_Frontadmin.xml /app/etc/modules/Meobook_Frontadmin.xml
@@ -30,4 +31,6 @@
 /js/frontadmin/jquery-1.11.1.min.js /js/frontadmin/jquery-1.11.1.min.js
 /js/frontadmin/jquery.fancybox.css /js/frontadmin/jquery.fancybox.css
 /js/frontadmin/jquery.fancybox.pack.js /js/frontadmin/jquery.fancybox.pack.js
-/screenshot/screenshot.png /screenshot/screenshot.png
+/js/frontadmin/quickedit.css /js/frontadmin/quickedit.css
+/screenshot/screenshot1.png /screenshot/screenshot1.png
+/screenshot/screenshot2.png /screenshot/screenshot2.png

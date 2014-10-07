@@ -36,7 +36,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <Meobook_Frontadmin after="Mage_Adminhtml">Meobook_Frontadmin</Meobook_Frontadmin>
+                        <Meobook_Frontadmin after="Mage_Adminhtml">Meobook_Frontadmin_Adminhtml</Meobook_Frontadmin>
                     </modules>
                 </args>
             </adminhtml>
@@ -68,6 +68,15 @@
                     </frontadmin_observer>
                 </observers>
             </controller_action_predispatch>
+            <controller_action_layout_load_before>
+                <observers>
+                    <frontadmin_load_layout_before>
+                        <type>singleton</type>
+                        <class>meobookfrontadmin/observer</class>
+                        <method>updateHanle</method>
+                    </frontadmin_load_layout_before>
+                </observers>
+            </controller_action_layout_load_before>
 <!--             <controller_action_layout_generate_blocks_after>
                 <observers>
                     <frontadmin_init>
