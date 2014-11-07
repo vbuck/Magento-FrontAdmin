@@ -1,0 +1,8 @@
+{
+    "name": "minhtc/Magento-FrontAdmin",
+    "type": "magento-module",
+    "description": "Manage a Magento store with an admin bar from the frontend.",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
